@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>My personal Project</title>
+        <style>
+            body{
+                width: 300px;
+                height:450px;
+            }
+            img {
+                border-radius: 50%;
+                float: left;
+            }
+            .control_pannel{
+                text-align: center;
+                border-radius: 25px;
+                background: #00ffb3;
+            }
+            .headpart{
+                border-radius: 50px 15px 50px 15px;
+                border: 2px solid #00ffb3;
+                font-family: Courier, Monospace;
+            }
+            .outputstyle{
+                border-radius: 50px;
+                background: #ff9898;
+                font-family: Courier, Monospace;
+                text-align: center;
+            }
+        </style>
+    </head>
+    <body>
+        <div class = "headpart">
+            <img src="https://avatars.githubusercontent.com/u/47217084?s=460&u=fafd12edbc7a2843852376fbf1de85acc7f172a9&v=4" alt="Profile" width="80" height="80">
+            <h1 align="left">Hello User...</h1>
+            <p align="center">Everything is in<br>your one click</p>
+        </div>
+        <hr>
+        <div class = "connectpart">
+            <label for="ipaddress">IP Address:</label><br>
+            <input type="text" id="ipaddress" name="ipaddress" value="192.168.43.81">
+            <button id="connect">Connect</button>
+        </div>
+        <hr>
+        <div class = "control_pannel">
+            <label>Switch 1 :</label>
+            <button id="btA_on" onclick="sendingData(11)">ON</button><button id="btA_off" onclick="sendingData(10)">OFF</button><br>
+            <label>Switch 2 :</label>
+            <button id="btB_on" onclick="sendingData(21)">ON</button><button id="btB_off" onclick="sendingData(20)">OFF</button><br>
+            <label>Switch 3 :</label>
+            <button id="btV_on" onclick="sendingData(31)">ON</button><button id="btc_off" onclick="sendingData(30)">OFF</button><br>
+            <label>Switch 4 :</label>
+            <button id="btA_on" onclick="sendingData(41)">ON</button><button id="bte_off" onclick="sendingData(40)">OFF</button><br>
+        </div>
+        <hr>
+        <input type="checkbox" id="checkOutper" name="checkOutper" value="showOutput">
+        <label for="checkOutper">: want to see the output</label><br>
+        <p id="outDatawesee" class="outputstyle">Output Data :</p>
+        <p align="right">by: Sukarna Jana</p>
+    </body>
+    <script type="text/javascript" src="mainPGcontrol.js"></script>
+</html>
